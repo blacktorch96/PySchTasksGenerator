@@ -1,5 +1,9 @@
 """
 Taskplaner Generator
+
+update: 
+wget https://raw.githubusercontent.com/blacktorch96/PySchTasksGenerator/main/taskplaner.py -outfile taskplaner.py
+
 Prüft alle *.py dateien im aktuellen Verzeichnis (excl. venv) nach einer Zeile mit #TaskPlaner [PARAMS]
 und generiert dazu passend schtasks.exe - Befehle die im Windows-Taskplaner angelegt werden können.
 Diese stehen dann in der taskplaner.cmd-Datei im gleichen Verzeichnis.
@@ -7,6 +11,9 @@ Diese stehen dann in der taskplaner.cmd-Datei im gleichen Verzeichnis.
 Beispiel:
 #TaskPlaner: /ST "07:00" /RI 15 /DU 12:00 /SC DAILY
 Start 7 Uhr, Wiederholung alle 15 Minuten, Duration 12 Stunden, Täglich
+
+https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks
+https://learn.microsoft.com/de-de/windows-server/administration/windows-commands/schtasks
 
 # schtasks /create /tn "(py) cp abc_lineitems"
     /tr "C:\Program Files (x86)\Python36-32\python.exe d:\Work\sf_sync_wwwdb\abc_lineitems.py"
