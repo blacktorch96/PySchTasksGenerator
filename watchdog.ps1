@@ -4,6 +4,7 @@ Watchdog Powershellmodule
 update: 
 wget https://raw.githubusercontent.com/blacktorch96/PySchTasksGenerator/main/watchdog.ps1 -outfile watchdog.ps1
 
+2024-08-13:DJE: init
 #>
 function watchdog($servername, $dienstname, $status, $comment, $debug=$false) {
 	if ($servername -eq "") {$servername=$env:computername}
